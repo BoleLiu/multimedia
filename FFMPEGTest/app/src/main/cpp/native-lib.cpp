@@ -19,42 +19,6 @@ extern "C"{
 #include "libavutil/log.h"
 };
 
-//struct URLProtocol;
-
-//extern "C"
-//jstring
-//Java_com_bignerdranch_android_ffmpegtest_MainActivity_configurationinfo(
-//        JNIEnv* env,
-//        jobject /* this */) {
-//    char info[10000] = {0};
-//    sprintf(info, "%s\n", avcodec_configuration());
-//    return env->NewStringUTF(info);
-//}
-//
-//extern "C"
-//jstring Java_com_bignerdranch_android_ffmpegtest_MainActivity_urlprotocolinfo(JNIEnv* env,
-//                                                                              jobject /* this */){
-//    char info[40000] = {0};
-//    av_register_all();
-//
-//    struct URLProtocol *pup = NULL;
-//    //Input
-//    struct URLProtocol **p_temp = &pup;
-//    avio_enum_protocols((void **)p_temp,0);
-//    while((*p_temp) != NULL){
-//        sprintf(info,"%s[In ][%10s]\n", info, avio_enum_protocols((void **)p_temp, 0));
-//    }
-//    pup = NULL;
-//    //Output
-//    avio_enum_protocols((void **)p_temp, 1);
-//    while ((*p_temp) != NULL){
-//        sprintf(info, "%s[Out][%10s]\n", info, avio_enum_protocols((void **)p_temp, 1));
-//    }
-//
-//    //LOGE("%s", info);
-//    return env->NewStringUTF(info);
-//}
-
 const char *J_CLASS_NAME = "com/bignerdranch/android/ffmpegtest/MainActivity";
 jclass mainActivity;
 jmethodID onDecoder;
